@@ -1,0 +1,28 @@
+[user]
+	email = david@etherealdave.net
+	name = David A. Brown
+[alias]
+	alias = !git config -l | grep alias | cut -c 7-
+	br = branch -vv
+	co = checkout
+	ld = log --all --oneline --decorate --graph --date-order --pretty=\"format:%C(auto)%h %<(14)%ar %s\"
+	lg = log --all --oneline --decorate --graph --date-order
+	st = status -sb
+	stat = diff --stat
+	tags = tag -n
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[init]
+	defaultBranch = master
